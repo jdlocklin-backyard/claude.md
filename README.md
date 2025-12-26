@@ -86,6 +86,18 @@ When you update an agent:
 3. **Claude Code**: If using symlinks, changes are instant. If copying, re-run the copy command.
 4. **claude.ai**: Manually update the Project's custom instructions
 
+### Git Commands
+
+PowerShell:
+```
+cd $env:USERPROFILE\repos\claude-agents; git add .; git commit -m "Update agents"; git push
+```
+
+Linux/macOS:
+```
+cd ~/repos/claude-agents && git add . && git commit -m "Update agents" && git push
+```
+
 ## Agent File Format
 
 ```markdown
